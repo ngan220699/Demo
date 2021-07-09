@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <script src="public/js/jquery-3.5.1.min.js"></script>
+    <script src="public/js/bootstrap.min.js"></script>
+    <script src="public/js/fontawesome.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header" style="padding:20px 10px">
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a href=""><img src="public/images/logo.png" alt=""></a>
+                        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavId">
+                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">RECIPES</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="#">RECIPE LIST</a>
+                                        <a class="dropdown-item" href="#">RECIPE SINGLE</a>
+                                        <a class="dropdown-item" href="#">RECIPE INDEX</a>
+                                        <a class="dropdown-item" href="#">SUBMIT RECIPE</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">EVENTS</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="#">EVENT LIST</a>
+                                        <a class="dropdown-item" href="#">EVENT SINGLE</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">BLOG</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="#">BLOG LIST</a>
+                                        <a class="dropdown-item" href="#">BLOG SINGLE</a>
+                                        <a class="dropdown-item" href="#">ARCHIVE</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">PAGES</a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                        <a class="dropdown-item" href="#">CONTACT</a>
+                                        <a class="dropdown-item" href="#">FAQ</a>
+                                        <a class="dropdown-item" href="#">TYPHOGRAPHY</a>
+                                        <a class="dropdown-item" href="#">MY ACCOUNT</a>
+                                        <a class="dropdown-item" href="#">LOGIN</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ABOUT US</a>
+                                </li>
+                            </ul>
+                            <nav class="social-navigation ml-auto">
+                                <div class="social">
+                                    <ul class="social-menu">
+                                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-search"></i></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-bg" style="background-image: url(./public/images/slide-13.png);">
+                        <h2>Our 10 Most Popular Recipes</h2>
+                        <a href="" class="read-more">EXPLORE NOW</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-bg" style="background-image: url(./public/images/slide-14.png);">
+                        <h2>Best Review Recipe 2019</h2>
+                        <a href="" class="read-more">READ MORE</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-bg" style="background-image: url(./public/images/slide-15.png);">
+                        <h2>Most Popular Homemade Recipes</h2>
+                        <a href="" class="read-more">EXPLORE NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="container">
+                <div class="choice">
+                    <div class="editor-choice">
+                        <h3><b>EDITOR'S CHOICE</b></h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 md-3">
+                            <div class="row mx-2">
+                                <div class="col-12 col-12 pb-2">
+                                    <img class="img-fluid" src="public/images/food-l.png" alt="">
+                                    <a href="" class="main-caption rounded-circle" style="position: absolute;">
+                                        <p>FOOD</p>
+                                        <span><em>20 Recipes</em></span>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-6">
+                                    <img class="img-fluid" src="public/images/food-s.png" alt="">
+                                </div>
+                                <div class="col-6 col-6">
+                                    <img class="img-fluid" src="public/images/food-s2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 md-3">
+                            <div class="row mx-2">
+                                <div class="col-12 col-12 pb-2">
+                                    <img class="img-fluid" src="public/images/beverage-l.png" alt="">
+                                    <a href="" class="main-caption rounded-circle" style="position: absolute;">
+                                        <p>BEVERAGE</p>
+                                        <span><em>16 Recipes</em></span>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-6">
+                                    <img class="img-fluid" src="public/images/beverage-s.png" alt="">
+                                </div>
+                                <div class="col-6 col-6">
+                                    <img class="img-fluid" src="public/images/beverage-s2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 md-3">
+                            <div class="row mx-2">
+                                <div class="col-12 col-12 pb-2">
+                                    <img class="img-fluid" src="public/images/dessert-l.png" alt="">
+                                    <a href="" class="main-caption rounded-circle" style="position: absolute;">
+                                        <p>DESSERT</p>
+                                        <span><em>18 Recipes</em> </span>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-6">
+                                    <img class="img-fluid" src="public/images/dessert-s.png" alt="">
+                                </div>
+                                <div class="col-6 col-6">
+                                    <img class="img-fluid" src="public/images/dessert-s2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 md-3">
+                            <div class="row mx-2">
+                                <div class="col-12 col-12 pb-2 pt-2">
+                                    <img class="img-fluid" src="public/images/pudding-l.png" alt="">
+                                    <a href="" class="main-caption rounded-circle" style="position: absolute;">
+                                        <p>PUDDING</p>
+                                        <span><em> 28 Recipes</em></span>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-6">
+                                    <img class="img-fluid" src="public/images/pudding-s.png" alt="">
+                                </div>
+                                <div class="col-6 col-6">
+                                    <img class="img-fluid" src="public/images/pudding-ss.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-section">
+                    <div class="container">
+                        <div class="section-title">
+                            <h3><b>SPECIAL FEATURES</b></h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 md-4">
+                                <div class="section-caption">
+                                    <span class="fitcon"><i class="fas fa-chart-line"></i></span>
+                                    <h4>Food Nutritions</h4>
+                                    <p>Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in
+                                        futurum.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 md-4">
+                                <div class="section-caption">
+                                    <span class="fitcon"><i class="far fa-clock"></i></span>
+                                    <h4>Cooking Period</h4>
+                                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                                        consequat,
+                                        vel illum dolore eu feugiat nulla facilisis.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4 md-4">
+                                <div class="section-caption">
+                                    <span class="fitcon"><i class="fas fa-user-friends"></i></span>
+                                    <h4>Membership</h4>
+                                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation coper suscipit
+                                        lobortis
+                                        nisl
+                                        ut
+                                        aliquip commodo consequat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="special-features">
+                    <div class="container">
+                        <div class="caption-feature">
+                            <h3><b>SPECIAL FEATURES</b></h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 md-3">
+                                <div class="view-span">
+                                    <div class="recipe-thumb">
+                                        <img class="img-fluid" src="public/images/thumb-1.png" alt="">
+                                        <a href="#" class="bookmarker"><i class="fas fa-bookmark"></i></a>
+                                    </div>
+                                    <div class="recipe-desc">
+                                        <h2 class="recipe-title">
+                                            <a href="#">Salad Nicoise</a>
+                                        </h2>
+                                        <p><em>By Lina Sukowati</em></p>
+                                        <span><i class="fas fa-clock"></i>&nbsp;9 Minutes</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 md-3">
+                                <div class="recipe-thumb">
+                                    <img class="img-fluid" src="public/images/thumb-2.png" alt="">
+                                    <a href="#" class="bookmarker"><i class="fas fa-bookmark"></i></a>
+                                </div>
+                                <div class="recipe-desc">
+                                    <h2 class="recipe-title">
+                                        <a href="#">Grilled Beef Steak</a>
+                                    </h2>
+                                    <p><em>By Eka Nurwasilah</em></p>
+                                    <span><i class="fas fa-clock"></i>&nbsp;26 Minutes</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 md-3">
+                                <div class="recipe-thumb">
+                                    <img class="img-fluid" src="public/images/thumb-3.png" alt="">
+                                    <a href="#" class="bookmarker"><i class="fas fa-bookmark"></i></a>
+                                </div>
+                                <div class="recipe-desc">
+                                    <h2 class="recipe-title">
+                                        <a href="#">Tiger Prawns Roasted</a>
+                                    </h2>
+                                    <p><em>By Nurjanah</em></p>
+                                    <span><i class="fas fa-clock"></i>&nbsp;27 Minutes</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 md-3">
+                                <div class="recipe-thumb">
+                                    <img class="img-fluid" src="public/images/thumb-4.png" alt="">
+                                    <a href="#" class="bookmarker"><i class="fas fa-bookmark"></i></a>
+                                </div>
+                                <div class="recipe-desc">
+                                    <h2 class="recipe-title">
+                                        <a href="#">Fresh Spaghetti with Tuna</a>
+                                    </h2>
+                                    <p><em>By Lina Sukowati</em></p>
+                                    <span><i class="fas fa-clock"></i>&nbsp;45 Minutes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 md-3">
+                                <div class="recipe-thumb">
+                                    <img class="img-fluid" src="public/images/thumb-5.png" alt="">
+                                    <a href="#" class="bookmarker"><i class="fas fa-bookmark"></i></a>
+                                </div>
+                                <div class="recipe-desc">
+                                    <h2 class="recipe-title">
+                                        <a href="#">Roast Aubergine</a>
+                                    </h2>
+                                    <p>By Lina Sukowati</p>
+                                    <span><i class="fas fa-clock"></i>&nbsp;1 Hour</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 md-3">
+                                <div class="recipe-thumb">
+                                    <img class="img-fluid" src="public/images/thumb-6.png" alt="">
+                                    <a href="#" class="bookmarker"><i class="fas fa-bookmark"></i></a>
+                                </div>
+                                <div class="recipe-desc">
+                                    <h2 class="recipe-title">
+                                        <a href="#">Indian Mixed Rice</a>
+                                    </h2>
+                                    <p><em>By Eka Nurwasilah</em></p>
+                                    <span><i class="fas fa-clock"></i>&nbsp;26 Minutes</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 md-3">
+                                <div class="recipe-thumb">
+                                    <img class="img-fluid" src="public/images/thumb-7.png" alt="">
+                                    <a href="#" class="bookmarker"><i class="fas fa-bookmark"></i></a>
+                                </div>
+                                <div class="recipe-desc">
+                                    <h2 class="recipe-title">
+                                        <a href="#">Black Red Cake</a>
+                                    </h2>
+                                    <p><em>By Nurjanah</em></p>
+                                    <span><i class="fas fa-clock"></i>&nbsp;27 Minutes</span>
+                                </div>
+                            </div>
+                            <div class="col-md-3 md-3">
+                                <div class="recipe-thumb">
+                                    <img class="img-fluid" src="public/images/thumb-8.png" alt="">
+                                    <a href="#" class="bookmarker"><i class="fas fa-bookmark"></i></a>
+                                </div>
+                                <div class="recipe-desc">
+                                    <h2 class="recipe-title">
+                                        <a href="#">Fresh Spaghetti with Tuna</a>
+                                    </h2>
+                                    <p><em>By Lina Sukowati</em></p>
+                                    <span><i class="fas fa-clock"></i>&nbsp;45 Minutes</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-recipe">
+                            <a href="" class="btn btn-line">VIEW ALL RECIPES</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="taplak-editor">
+                    <div class="container">
+                        <div class="editor-title">
+                            <h3><b> TAPLAK EDITOR</b></h3>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-md-2 md-2">
+                                <div class="author">
+                                    <img class="img-fluid" src="public/images/ava-1.png" class="rounded-circle" alt="Avatar">
+                                    <p><b>ROBERTA FARINA</b></p>
+                                    <p><em>Executive Editor</em></p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 md-2">
+                                <div class="author">
+                                    <img class="img-fluid" src="public/images/ava-2.png" class="rounded-circle" alt="Avatar">
+                                    <p><b>NIA KURNIASARI</b></p>
+                                    <p><em>Internet Marketer</em></p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 md-2">
+                                <div class="author">
+                                    <img class="img-fluid" src="public/images/ava-3.png" class="rounded-circle" alt="Avatar">
+                                    <p><b>RINA ALEXANDERI</b></p>
+                                    <p><em>Publisher</em></p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 md-2">
+                                <div class="author">
+                                    <img src="public/images/ava-4.png" class="rounded-circle" alt="Avatar">
+                                    <p><b>SITI JULAIHA</b></p>
+                                    <p><em>System Administrator</em></p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 md-2">
+                                <div class="author">
+                                    <img src="public/images/ava-5.png" class="rounded-circle" alt="Avatar">
+                                    <p><b>LAILA DELOVA</b></p>
+                                    <p><em>Graphic Designe</em>r</p>
+                                </div>
+                            </div>
+                            <div class="col-md-2 md-2">
+                                <div class="author">
+                                    <img src="public/images/ava-1.png" class="rounded-circle" alt="Avatar">
+                                    <p><b>FATUR</b></p>
+                                    <p><em>Web Developer</em></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upcoming-event parallax-bg">
+                    <div class="container">
+                        <div class="upcoming-title">
+                            <h3>UPCOMING EVENT</h3>
+                        </div>
+                        <div class="row justify-content-md-center">
+                            <div class="col col-md-8">
+                                <div class="event-cap">
+                                    <h2>Housewife Cooking Competition</h2>
+                                    <p>
+                                        <i class="fas fa-calendar"></i>Saturday, January 20, 2019<br>
+                                        <i class="fas fa-map-marker-alt"></i>Balai Sartini, Surakarta
+                                    </p>
+                                    <div class="more-info">
+                                        <a href="#" class="info btn-line">MORE INFO</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recent-blog">
+                    <div class="container">
+                        <div class="blog-title">
+                            <h3><b> RECENT BLOG POST</b></h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 md-3">
+                                <div class="blog-thumb">
+                                    <img src="public/images/blog-1.png" alt="">
+                                </div>
+                                <div class="blog-caption">
+                                    <h2 class="lorem">
+                                        <b>Claritas est etiam processus dynamicus, qui sequitur nembuz</b>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <div class="cat"><a href="#">Cooking Tips</a></div>
+                                        <time class="published" datetime="2020-07-07"
+                                            title="July 7, 2020 - 21:12 pm">July
+                                            3,
+                                            2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 md-3">
+                                <div class="blog-thumb">
+                                    <img src="public/images/blog-2.png" alt="">
+                                </div>
+                                <div class="blog-caption">
+                                    <h2 class="lorem">
+                                        <b> Anteposuerit litterarum formas humanitatis per seacula</b>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <div class="cat"><a href="#">How to</a></div>
+                                        <time class="published" datetime="2020-07-07"
+                                            title="July 7, 2020 - 21:12 pm">July
+                                            3,
+                                            2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 md-3">
+                                <div class="blog-thumb">
+                                    <img src="public/images/blog-3.png" alt="">
+                                </div>
+                                <div class="blog-caption">
+                                    <h2 class="lorem">
+                                        <b>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</b>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <div class="cat"><a href="#">Cooking Tips</a></div>
+                                        <time class="published" datetime="2020-07-07"
+                                            title="July 7, 2020 - 21:12 pm">July
+                                            3,
+                                            2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 md-3">
+                                <div class="blog-thumb">
+                                    <img src="public/images/blog-4.png" alt="">
+                                </div>
+                                <div class="blog-caption">
+                                    <h2 class="lorem">
+                                        <b> Mirum est notare quam littera gothica</b>
+                                    </h2>
+                                    <div class="post-meta">
+                                        <div class="cat"><a href="#">Cooking Tips</a></div>
+                                        <time class="published" datetime="2020-07-07"
+                                            title="July 7, 2020 - 21:12 pm">July
+                                            3,
+                                            2020</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow-me">
+                    <div class="ig-bth">
+                        <a href="#" class="follow-ig">
+                            <i class="fab fa-instagram"></i>&nbsp;Follow Me on Instagram
+                        </a>
+                    </div>
+                    <div class="img-ig-fluid">
+                        <div class="row">
+                            <div class="col-md-2"> <img src="public/images/ig-1.png" alt=""></div>
+                            <div class="col-md-2"> <img src="public/images/ig-2.png" alt=""></div>
+                            <div class="col-md-2"> <img src="public/images/ig-3.png" alt=""></div>
+                            <div class="col-md-2"> <img src="public/images/ig-4.png" alt=""></div>
+                            <div class="col-md-2"> <img src="public/images/ig-5.png" alt=""></div>
+                            <div class="col-md-2"> <img src="public/images/ig-6.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="img-social">
+                        <a href="#"><i class="fab fa-facebook-square mr-1"></i>Facebook</a>
+                        <a href="#"><i class="fab fa-twitter mr-1"></i>Twitter</a>
+                        <a href="#"><i class="fab fa-pinterest mr-1"></i>Pinterest</a>
+                        <a href="#"><i class="fab fa-instagram mr-1"></i>Instagram</a>
+                        <a href="#"><i class="fab fa-linkedin mr-1"></i>Linkedin</a>
+                        <a href="#"><i class="fab fa-youtube mr-1"></i>Youtube</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-md-6 md-6 pb-4" style="border-right:.1px solid #ffffff54">
+                <div class="about-taplak">
+                    <h3 class="widget-title">About Taplak</h3>
+                    <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
+                        lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram,
+                        anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta
+                        decima.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 md-6">
+                <div class="stay-update">
+                    <h3 class="widget-title">Stay Updated</h3>
+                    <span>Register your email address to get promos, product updates and other info.</span>
+                    <div class="subscribe-form mt-3">
+                        <input type="email" name="EMAIL" placeholder="Your email address" required="">
+                        <input type="submit" value="Subscribe">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-4" style="font-size: 13px; border-top:.1px solid #ffffff54">
+            <div class="col-md-6 md-6">
+                © 2020 Taplak Web Template. Made with <i class="fas fa-heart"></i> by Kim Ngan</p>
+            </div>
+            <div class="col-md-6 md-6">
+                <nav class="navbar">
+                    <ul class="navbar-footer">
+                        <li>
+                            <a href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms and Conditions</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
